@@ -46,7 +46,7 @@ const CoinPage = () => {
     } catch (error) {
       setAlert({
         open: true,
-        message: error.message,
+        message:error.message,
         type: 'error',
       });
     }
