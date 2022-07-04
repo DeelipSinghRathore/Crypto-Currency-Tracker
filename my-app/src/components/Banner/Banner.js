@@ -41,7 +41,7 @@ function Banner() {
               fontFamily: 'Montserrat',
             }}
           >
-            Crypto Integeration
+            Crypto-Bazzar
           </Typography>
           <Typography
             variant='subtitle2'

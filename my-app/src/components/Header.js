@@ -33,9 +33,9 @@ const darkTheme = createTheme({
 const Header = () => {
   const classes = useStyles();
   const history = useNavigate();
-  const { currency, setCurrency,user } = CryptoState();
+  const { currency, setCurrency, user } = CryptoState();
   useEffect(() => {
-    console.log(currency);
+    // console.log(currency);
   }, [currency]);
   return (
     <ThemeProvider theme={darkTheme}>
@@ -47,7 +47,7 @@ const Header = () => {
               className={classes.title}
               variant='h6'
             >
-              Crypto-Integration
+              Crypto-Bazzar
             </Typography>
             <Select
               variant='outlined'
@@ -62,7 +62,7 @@ const Header = () => {
               <MenuItem value={'USD'}>USD</MenuItem>
               <MenuItem value={'INR'}>INR</MenuItem>
             </Select>
-            { user?<UserSidebar/>:<AuthModel />}
+            {user ? <UserSidebar /> : <AuthModel />}
           </Toolbar>
         </Container>
       </AppBar>
